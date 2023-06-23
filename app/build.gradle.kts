@@ -94,12 +94,12 @@ android {
         named("debug") {
             resValue("string", "app_name", "ElementX dbg")
             applicationIdSuffix = ".debug"
-            signingConfig = signingConfigs.getByName("debug")
+            // signingConfig = signingConfigs.getByName("debug")
         }
 
         named("release") {
             resValue("string", "app_name", "ElementX")
-            signingConfig = signingConfigs.getByName("debug")
+            // signingConfig = signingConfigs.getByName("debug")
 
             postprocessing {
                 isRemoveUnusedCode = true
@@ -117,7 +117,7 @@ android {
             versionNameSuffix = "-nightly"
             resValue("string", "app_name", "ElementX nightly")
             matchingFallbacks += listOf("release")
-            signingConfig = signingConfigs.getByName("nightly")
+            // signingConfig = signingConfigs.getByName("nightly")
 
             postprocessing {
                 initWith(release.postprocessing)
