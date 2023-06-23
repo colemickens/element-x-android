@@ -80,13 +80,13 @@ android {
             storePassword = "android"
         }
         register("nightly") {
-            keyAlias = System.getenv("ELEMENT_ANDROID_NIGHTLY_KEYID")
-                ?: project.property("signing.element.nightly.keyId") as? String?
-            keyPassword = System.getenv("ELEMENT_ANDROID_NIGHTLY_KEYPASSWORD")
-                ?: project.property("signing.element.nightly.keyPassword") as? String?
-            storeFile = file("./signature/nightly.keystore")
-            storePassword = System.getenv("ELEMENT_ANDROID_NIGHTLY_STOREPASSWORD")
-                ?: project.property("signing.element.nightly.storePassword") as? String?
+            // keyAlias = System.getenv("ELEMENT_ANDROID_NIGHTLY_KEYID")
+            //     ?: project.property("signing.element.nightly.keyId") as? String?
+            // keyPassword = System.getenv("ELEMENT_ANDROID_NIGHTLY_KEYPASSWORD")
+            //     ?: project.property("signing.element.nightly.keyPassword") as? String?
+            // storeFile = file("./signature/nightly.keystore")
+            // storePassword = System.getenv("ELEMENT_ANDROID_NIGHTLY_STOREPASSWORD")
+            //     ?: project.property("signing.element.nightly.storePassword") as? String?
         }
     }
 
